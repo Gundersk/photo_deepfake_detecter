@@ -25,7 +25,7 @@ face_detection = mp_face_detection.FaceDetection(
     min_detection_confidence=0.5
 )
 
-def load_model(model_path='best_model2.pth'):
+def load_model(model_path='bot/best_model2.pth'):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
     model = models.efficientnet_b3(weights=models.EfficientNet_B3_Weights.IMAGENET1K_V1)
